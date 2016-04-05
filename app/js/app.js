@@ -12,8 +12,18 @@ stockPredictionApp.config(function($stateProvider, $urlRouterProvider){
             url:'/welcome',
             templateUrl:'../app/templates/showTopTens.html',
             controller:'TopTenController'
-        }).state('about',{
-            //afterwards
+        }).state('search',{
+            url:'/search',
+            templateUrl:'../app/templates/searchingDetails.html',
+            controller:'SearchingDetailsController'
+        })
+        .state('login',{
+            url:'/login',
+            templateUrl:'../app/templates/login.html'
+        })
+        .state('signup',{
+            url:'/signup',
+            templateUrl:'../app/templates/signup.html'
         });
 
 });
